@@ -1,5 +1,5 @@
 name: "Podcast Generator"
-author: "Your Name"
+author: "Ashley Miltenberger"
 description: "A GitHub Action to generate podcast episodes from markdown files."
 runs:
   using: "docker:
@@ -11,10 +11,11 @@ inputs:
   email:
     description: "Email address for Git commits"
     required: true
-    default: ${{github.actor }}
+    default: ${{ github.actor }}
   name:
     description: "Name for Git commits"
-    required: true   
+    required: true 
+    default: ${{ github.actor }}
 
 
 

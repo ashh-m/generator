@@ -6,9 +6,9 @@ git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${INPUT_EMAIL}"
 git config --global --add safe.directory /github/workspace
 
-python3 /urs/bin/update_feed.py
+python3 /workspaces/generator/feed.py
 
-git ad -A && git commit -m "Update feed"
+git add -A && git commit -m "Update feed"
 
 git push --set-upstream origin main
 
