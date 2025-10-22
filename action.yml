@@ -2,18 +2,18 @@ name: "Podcast Generator"
 author: "Ashley Miltenberger"
 description: "A GitHub Action to generate podcast episodes from markdown files."
 runs:
-  using: "docker:
-    image: "Dockerfile"
+  using: "docker"
+  image: "Dockerfile"
 branding:
   icon: "git-branch"
   color: "red"
 inputs:
   email:
-    description: "Email address for Git commits"
+    description: "The commiter's email address""
     required: true
-    default: ${{ github.actor }}
+      default: ${{ github.actor }}@localhost
   name:
-    description: "Name for Git commits"
+    description: "The commiter's name"
     required: true 
     default: ${{ github.actor }}
 
