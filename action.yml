@@ -1,4 +1,4 @@
-name: "Podcast Generator"
+name: "Test Podcast Generator"
 author: "Ashley Miltenberger"
 description: "A GitHub Action to generate podcast episodes from markdown files."
 runs:
